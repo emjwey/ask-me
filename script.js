@@ -20,7 +20,7 @@ const decide = event => {
 
         const img = document.createElement('img');
         img.setAttribute('src', result.image)
-        img.classList = "w-full h-screen sm:h-full object-cover bg-center"
+        img.classList = "w-full bg-center h-full"
 
             
 
@@ -30,7 +30,12 @@ const decide = event => {
             
         //Display image and text 
         imgArticle.append(img);
-        textAnswer.textContent = answer
+        textAnswer.textContent = answer;
+        document.body.style.cssText = `
+            background-image:url(${result.image});
+            background-repeat:no-repeat;
+            background-size:cover;
+        `;
     })
 }
 
