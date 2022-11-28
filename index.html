@@ -7,21 +7,21 @@
     <title>ASK ME</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-900">
+<body class="bg-gray-800  " >
 
-    <section>
-        <header class=" bg-white/[.4] space-y-4 p-4 sm:px-8 sm:py-2 lg:p-4 xl:px-6 xl:py-4 absolute w-full backdrop-blur-lg">
+    <section class="relative sm:absolute  sm:left-1/2 sm:top-1/2 sm:-translate-y-1/2 sm:-translate-x-1/2 w-full max-w-[800px] h-full max-h-[500px] bg-gray-900 rounded-md overflow-hidden">
+        <header class=" bg-white/[.1] space-y-4 p-4 sm:px-8 sm:py-2 lg:p-4 xl:px-6 xl:py-4 absolute w-full  backdrop-blur-lg z-10">
             <h2 class="font-semibold text-slate-900 text-white text-2xl text-center sm:text-left ">Can't decide bro? Let us help ya!</h2>
             <form class="group relative">
               <div class="absolute left-3 top-1/2 -mt-3 text-slate-400 pointer-events-none group-focus-within:text-blue-500 text-1xl font-bold" >?</div>
-              <input class="focus:ring-2 focus:ring-blue-500 focus:outline-none appearance-none max-w sm:max-w-xl w-full text-sm leading-6 text-slate-900 placeholder-slate-400 rounded-md py-2 pl-10 ring-1 ring-slate-200 shadow-sm" type="text" aria-label="Filter projects" placeholder="Ask me a question!">
+              <input class="focus:ring-2 focus:ring-blue-500 focus:outline-none appearance-none w-full text-sm leading-6 text-slate-900 placeholder-slate-400 rounded-md py-2 pl-10 ring-1 ring-slate-200 shadow-sm" type="text" aria-label="Filter projects" placeholder="Ask me a question!">
             </form>
            
           </header>
-          <div>
-            <div id="image-article">
+          <div class="relative w-full h-screen sm:h-full">
+            <div id="image-article" class="w-full h-screen sm:h-full ">
             </div>
-            <h2 class="absolute bottom-6 left-1/2 font-semibold text-white  bg-gray-900 p-4 leading-none capitalize rounded-md -translate-x-2/4 xl:text-4xl md:text-2xl sm:text-base" id="text-answer"></h2>
+            <h2 class="absolute bottom-6 left-1/2 font-semibold text-white  bg-gray-900 p-2 leading-none capitalize rounded-md -translate-x-2/4 xl:text-2xl md:text-xl sm:text-base" id="text-answer"></h2>
         </div>
     </section>
     <script src="./script.js"></script>

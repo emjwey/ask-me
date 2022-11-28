@@ -20,7 +20,7 @@ const decide = event => {
 
         const img = document.createElement('img');
         img.setAttribute('src', result.image)
-        img.classList = "w-full h-screen object-cover bg-center"
+        img.classList = "w-full h-screen sm:h-full object-cover bg-center"
 
             
 
